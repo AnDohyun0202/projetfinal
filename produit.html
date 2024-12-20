@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Produit - Votre Site Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 오버레이 섹션 -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- 헤더 섹션 -->
+    <header>
+        <!-- 장바구니 아이콘 -->
+	<a href="cart.html" class="cart-icon">
+          <img src="images/cart_icon.png" alt="Panier" width="30" height="30">
+	</a>
+
+        <button id="menuButton" class="menu-button">
+            <div class="menu-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </button>
+        <a href="index.html"><img src="images/01_logo.png" alt="Logo" class="logo"></a>
+        <nav id="menu" class="menu">
+            <button id="closeButton" class="close-button">&times;</button>
+            <ul>
+                <li><a href="produit.html"><strong>Produits</strong></a>
+                    <ul>
+                        <li><a href="produit.html">Produits</a></li>
+                        <li><a href="#">Abonnement</a></li>
+                        <li><a href="#">Salon de thé</a></li>
+                        <li><a href="#">Goodies</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><strong>À propre</strong></a>
+                    <ul>
+                        <li><a href="#">Concept</a></li>
+                        <li><a href="#">Chefs</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><strong>Aide</strong></a>
+                    <ul>
+                        <li><a href="#">Service client</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+	<!-- 메인 컨텐츠 -->
+<main class="produit-page">
+   <!-- produit moment 이미지  -->
+   <div class="produit_main_image">
+       <img src="images/produit_moment_01.png" alt="Produit Image" class="produit_main_image">
+   </div>
+
+   <!-- 상품 섹션 -->
+   <div class="container">
+       <!-- Produit Moment 섹션 -->
+       <div class="section" data-name="Bombe Chocolat" data-price="6.10">
+               <div class="content">
+                   <img src="images/pati/Produit moment_01.png" alt="Viennoiserie" class="produit_icon">
+                   <h2 class="produit-title">Bombe Chocolat</h2>
+                   <p class="price">6,10€</p>
+               </div>
+           </a>
+       </div>
+
+       <!-- Viennoiserie 섹션 -->
+       <div class="section" data-name="Bombe Vanille" data-price="6.10">
+               <div class="content">
+                   <img src="images/pati/Produit moment_02.png" alt="Viennoiserie" class="produit_icon">
+                   <h2 class="produit-title">Bombe Vanille</h2>
+                   <p class="price">6,10€</p>
+               </div>
+           </a>
+       </div>
+
+       <!-- Petit Four 섹션 -->
+       <div class="section" data-name="Bombe Miel" data-price="6.10">
+               <div class="content">
+                  <img src="images/pati/Produit moment_03.png" alt="Viennoiserie" class="produit_icon">
+                   <h2 class="produit-title">Bombe Miel</h2>
+                   <p class="price">6,10€</p>
+               </div>
+           </a>
+       </div>
+
+       <!-- Café 섹션 -->
+       <div class="section" data-name="Bombe Abricot" data-price="6.10">
+               <div class="content">
+                   <img src="images/pati/Produit moment_04.png" alt="Viennoiserie" class="produit_icon">
+                   <h2 class="produit-title">Bombe Abricot</h2>
+                   <p class="price">6,10€</p>
+               </div>
+           </a>
+       </div>
+   </div>
+
+   <!-- Petit Four 이미지 -->
+   <div class="produit_main_image">
+       <img src="images/produit_moment_01.png" alt="Produit Image" class="produit_main_image">
+   </div>
+
+   <!-- 상품 섹션 (4개를 한 줄에 배치) -->
+   <div class="container">
+       <!-- Produit Moment 섹션 -->
+       <div class="section">
+           <a href="produit_moment.html">
+               <div class="content">
+                   <img src="images/produit_moment_02.png" alt="Produit Moment" class="produit_icon">
+                   <h2 class="produit-title">Produit Moment</h2>
+                   <p class="price">6,10€</p>
+               </div>
+           </a>
+       </div>
+
+       <!-- Viennoiserie 섹션 -->
+       <div class="section">
+           <a href="produit_viennoiserie.html">
+               <div class="content">
+                   <img src="images/pati/Produit moment_01.png" alt="Viennoiserie" class="produit_icon">
+                   <h2 class="produit-title">Viennoiserie</h2>
+                   <p class="price">6,10€</p>
+               </div>
+           </a>
+       </div>
+
+       <!-- Petit Four 섹션 -->
+       <div class="section">
+           <a href="produit_petit_four.html">
+               <div class="content">
+                   <img src="images/produits_petit_four.png" alt="Petit Four" class="produit_icon">
+                   <h2 class="produit-title">Petit Four</h2>
+                   <p class="price">6,10€</p>
+               </div>
+           </a>
+       </div>
+
+       <!-- Café 섹션 -->
+       <div class="section">
+           <a href="produit_cafe.html">
+               <div class="content">
+                   <img src="images/produits_cafe.png" alt="Café" class="produit_icon">
+                   <h2 class="produit-title">Café</h2>
+                   <p class="price">6,10€</p>
+               </div>
+           </a>
+       </div>
+   </div>
+
+   <!-- Viennoiserie 이미지 섹션 -->
+   <div class="produit_main_image">
+       <img src="images/produits_viennoiserie.png" alt="Produit Image" class="produit_main_image">
+   </div>
+
+   <!-- 상품 섹션 -->
+   <div class="container">
+       <!-- Produit Moment 섹션 -->
+       <div class="section" data-name="Croissant" data-price="1.40">
+               <div class="content">
+                    <img src="images/pati/vien_01.png" alt="Viennoiserie" class="produit_icon">
+                   <h2 class="produit-title">Croissant</h2>
+                   <p class="price">1,40€</p>
+               </div>
+           </a>
+       </div>
+
+       <!-- Viennoiserie 섹션 -->
+       <div class="section" data-name="Pain au chocolat" data-price="1.50">
+               <div class="content">
+                    <img src="images/pati/vien_02.png" alt="Viennoiserie" class="produit_icon">
+                   <h2 class="produit-title">Pain au chocolat</h2>
+                   <p class="price">1,50€</p>
+               </div>
+           </a>
+       </div>
+
+       <!-- Petit Four 섹션 -->
+       <div class="section" data-name="Roulé au raisin" data-price="1.90">
+               <div class="content">
+                    <img src="images/pati/vien_03.png" alt="Viennoiserie" class="produit_icon">
+                   <h2 class="produit-title">Roulé au raisin</h2>
+                   <p class="price">1,90€</p>
+               </div>
+           </a>
+       </div>
+
+       <!-- Café 섹션 -->
+       <div class="section" data-name="Pain chocolat rayé noisette" data-price="4.00">
+               <div class="content">
+                    <img src="images/pati/vien_04.png" alt="Viennoiserie" class="produit_icon">
+                   <h2 class="produit-title">Pain chocolat rayé noisette</h2>
+                   <p class="price">4,00€</p>
+                   </div>
+               </a>
+           </div>
+	       <!-- Petit Four 섹션 -->
+       <div class="section" data-name="Palet aux pommes" data-price="2.20">
+               <div class="content">
+                    <img src="images/pati/vien_05.png" alt="Viennoiserie" class="produit_icon">
+                   <h2 class="produit-title">Palet aux pommes</h2>
+                   <p class="price">2,20€</p>
+               </div>
+           </a>
+       </div>
+
+       <!-- Petit Four 섹션 -->
+       <div class="section" data-name="Cruffin framboise" data-price="3.80">
+               <div class="content">
+                    <img src="images/pati/vien_06.png" alt="Viennoiserie" class="produit_icon">
+                   <h2 class="produit-title">Cruffin framboise</h2>
+                   <p class="price">3,80€</p>
+               </div>
+           </a>
+       </div>
+	       <!-- Petit Four 섹션 -->
+       <div class="section" data-name="NYC roll noisette" data-price="4.00">
+               <div class="content">
+                    <img src="images/pati/vien_07.png" alt="Viennoiserie" class="produit_icon">
+                   <h2 class="produit-title">NYC roll noisette</h2>
+                   <p class="price">4,00€</p>
+               </div>
+           </a>
+       </div>
+	       <!-- Petit Four 섹션 -->
+       <div class="section" data-name="NYC roll pistache" data-price="4.20">
+               <div class="content">
+                    <img src="images/pati/vien_08.png" alt="Viennoiserie" class="produit_icon">
+                   <h2 class="produit-title">NYC roll pistache</h2>
+                   <p class="price">4,20€</p>
+               </div>
+           </a>
+       </div>
+   </div>
+
+   <!-- Café 이미지 -->
+   <div class="produit_main_image">
+       <img src="images/produit_moment_01.png" alt="Produit Image" class="produit_main_image">
+   </div>
+
+   <!-- 상품 섹션 (4개를 한 줄에 배치) -->
+   <div class="container">
+       <!-- Produit Moment 섹션 -->
+       <div class="section">
+           <a href="produit_moment.html">
+               <div class="content">
+                   <img src="images/produit_moment_02.png" alt="Produit Moment" class="produit_icon">
+                   <h2 class="produit-title">Produit Moment</h2>
+                   <p class="price">6,10€</p>
+               </div>
+           </a>
+       </div>
+
+       <!-- Viennoiserie 섹션 -->
+       <div class="section">
+           <a href="produit_viennoiserie.html">
+               <div class="content">
+                   <img src="images/produits_viennoiserie.png" alt="Viennoiserie" class="produit_icon">
+                   <h2 class="produit-title">Viennoiserie</h2>
+                   <p class="price">6,10€</p>
+               </div>
+           </a>
+       </div>
+
+       <!-- Petit Four 섹션 -->
+       <div class="section">
+           <a href="produit_petit_four.html">
+               <div class="content">
+                   <img src="images/produits_petit_four.png" alt="Petit Four" class="produit_icon">
+                   <h2 class="produit-title">Petit Four</h2>
+                   <p class="price">6,10€</p>
+               </div>
+           </a>
+       </div>
+
+       <!-- Café 섹션 -->
+       <div class="section">
+           <a href="produit_cafe.html">
+               <div class="content">
+                   <img src="images/produits_cafe.png" alt="Café" class="produit_icon">
+                   <h2 class="produit-title">Café</h2>
+                   <p class="price">6,10€</p>
+               </div>
+           </a>
+       </div>
+   </div>
+
+</main>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer-section">
+            <h3>Amuser chez Éclart</h3>
+            <ul>
+                <li><a href="produit.html">Produits</a></li>
+                <li><a href="#">Abonnement</a></li>
+                <li><a href="#">Salon du thé</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <ul>
+		<li><a href="contact_personelle.html">Personelle</a></li>
+                <li><a href="contact_career.html">Career</a></li>
+                <li><a href="contact_fournisseur.html">Fournisseur</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>À propre</h3>
+            <ul>
+                <li><a href="#">Notre concept</a></li>
+                <li><a href="#">Nos chefs</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Éclart Newsletter</h3>
+            <img src="images/mail.png" alt="Mail">
+        </div>
+        <div class="footer-logo">
+            <img src="images/Info.png" alt="Info">
+            <img src="images/slogan.png" alt="Slogan">
+        </div>
+    </footer>
+
+    <script>
+    const menuButton = document.getElementById('menuButton');
+    const closeButton = document.getElementById('closeButton');
+    const overlay = document.getElementById('overlay');
+    const menu = document.getElementById('menu');
+
+    menuButton.addEventListener('click', function() {
+        menu.classList.toggle('menu-open');
+        overlay.classList.toggle('overlay-visible');
+    });
+
+    closeButton.addEventListener('click', function() {
+        menu.classList.toggle('menu-open');
+        overlay.classList.toggle('overlay-visible');
+    });
+
+    overlay.addEventListener('click', function() {
+        menu.classList.remove('menu-open');
+        overlay.classList.remove('overlay-visible');
+    });
+    </script>
+
+<!-- `produit.html` 파일의 끝부분에 추가 -->
+<script>
+    // 장바구니 데이터를 로컬 스토리지에 저장
+    function addToCart(product) {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cart.push(product);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        alert(product.name + ' a été ajouté à votre panier.');
+    }
+
+    // 모든 상품 섹션에 클릭 이벤트 추가
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => {
+        section.addEventListener('click', () => {
+            const name = section.getAttribute('data-name');
+            const price = parseFloat(section.getAttribute('data-price'));
+            const product = { name, price };
+            addToCart(product);
+        });
+    });
+</script>
+</body>
+</html>
+

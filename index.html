@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Votre Site Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 오버레이 섹션 -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- 헤더 섹션 -->
+    <header>
+        <button id="menuButton" class="menu-button">
+            <div class="menu-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </button>
+        <a href="index.html"><img src="images/01_logo.png" alt="Logo" class="logo"></a>
+        <nav id="menu" class="menu">
+            <button id="closeButton" class="close-button">&times;</button>
+            <ul>
+                <li><a href="produit.html"><strong>Produits</strong></a>
+                    <ul>
+                        <li><a href="produit.html">Produits</a></li>
+                        <li><a href="#">Abonnement</a></li>
+                        <li><a href="#">Salon de thé</a></li>
+                        <li><a href="#">Goodies</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><strong>À propre</strong></a>
+                    <ul>
+                        <li><a href="#">Concept</a></li>
+                        <li><a href="#">Chefs</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><strong>Aide</strong></a>
+                    <ul>
+                        <li><a href="#">Service client</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 슬라이드 이미지 섹션 -->
+    <div class="carousel">
+        <div class="carousel-images">
+            <div class="carousel-slide visible">
+                <a href="produit_moment.html">
+                    <img src="images/Frontphoto_01.png" alt="Front Photo 1" class="carousel-image">
+                </a>
+                <a href="produit_moment.html" class="savoir-plus-button">Savoir plus</a>
+            </div>
+            <div class="carousel-slide">
+                <a href="abonnement.html">
+                    <img src="images/Frontphoto_02.png" alt="Front Photo 2" class="carousel-image">
+                </a>
+                <a href="abonnement.html" class="savoir-plus-button">Savoir plus</a>
+            </div>
+            <div class="carousel-slide">
+                <a href="notre_philosophie.html">
+                    <img src="images/Frontphoto_03.png" alt="Front Photo 3" class="carousel-image">
+                </a>
+                <a href="notre_philosophie.html" class="savoir-plus-button">Savoir plus</a>
+            </div>
+        </div>
+        <button id="prevButton" class="carousel-button prev-button">&#8249;</button>
+        <button id="nextButton" class="carousel-button next-button">&#8250;</button>
+    </div>
+
+<!-- 메인 컨텐츠 -->
+<main>
+   <div class="index-container">
+       <!-- Produit 섹션 -->
+       <div class="index-section">
+           <a href="produit.html">
+               <div class="content">
+                   <img src="images/icon_produit.png" alt="Produit Moment" class="icon">
+                   <h2>Produits</h2>
+               </div>
+           </a>
+           <p class="hover-text">Pâtisserie • Viennoiserie • Café</p>
+       </div>
+
+       <!-- Notre Philosophie 섹션 -->
+       <div class="index-section">
+           <a href="notre_philosophie.html">
+               <div class="content">
+                   <img src="images/icon_philosophie.png" alt="Notre Philosophie" class="icon">
+                   <h2>Livraison</h2>
+               </div>
+           </a>
+           <p class="hover-text">Abonnement • Livraison</p>
+       </div>
+
+       <!-- Aide 섹션 -->
+       <div class="index-section">
+           <a href="abonnement.html">
+               <div class="content">
+                   <img src="images/icon_abonnement.png" alt="Abonnement" class="icon">
+                   <h2>Aide</h2>
+               </div>
+           </a>
+           <p class="hover-text">Abonnement • Goodies • Service client</p>
+       </div>
+   </div>
+</main>
+
+
+    <!-- 메인 컨텐츠와 푸터 사이의 이미지 섹션 -->
+    <div class="between-content">
+        <img src="images/between_content_image.png" alt="Between Content Image" class="between-content-image">
+    </div>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer-section">
+            <h3>Amuser chez Éclart</h3>
+            <ul>
+                <li><a href="produit.html">Produits</a></li>
+                <li><a href="#">Abonnement</a></li>
+                <li><a href="#">Salon du thé</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <ul>
+		<li><a href="contact_personelle.html">Personelle</a></li>
+                <li><a href="contact_career.html">Career</a></li>
+                <li><a href="contact_fournisseur.html">Fournisseur</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>À propre</h3>
+            <ul>
+                <li><a href="#">Notre concept</a></li>
+                <li><a href="#">Nos chefs</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Éclart Newsletter</h3>
+            <img src="images/mail.png" alt="Mail">
+        </div>
+        <div class="footer-logo">
+            <img src="images/Info.png" alt="Info">
+            <img src="images/slogan.png" alt="Slogan">
+        </div>
+    </footer>
+
+    <script>
+    const menuButton = document.getElementById('menuButton');
+    const closeButton = document.getElementById('closeButton');
+    const overlay = document.getElementById('overlay');
+    const menu = document.getElementById('menu');
+
+    menuButton.addEventListener('click', function() {
+        menu.classList.toggle('menu-open');
+        overlay.classList.toggle('overlay-visible');
+    });
+
+    closeButton.addEventListener('click', function() {
+        menu.classList.toggle('menu-open');
+        overlay.classList.toggle('overlay-visible');
+    });
+
+    overlay.addEventListener('click', function() {
+        menu.classList.remove('menu-open');
+        overlay.classList.remove('overlay-visible');
+    });
+
+        // 슬라이드 이미지 기능
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const totalSlides = slides.length;
+
+        function updateSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('visible', i === index);
+            });
+        }
+
+        document.getElementById('nextButton').addEventListener('click', function() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSlide(currentIndex);
+        });
+
+        document.getElementById('prevButton').addEventListener('click', function() {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateSlide(currentIndex);
+        });
+
+        // 초기 슬라이드 설정
+        updateSlide(currentIndex);
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Produit - Votre Site Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 오버레이 섹션 -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- 헤더 섹션 -->
+    <header>
+        <!-- 장바구니 아이콘 -->
+	<a href="cart.html" class="cart-icon">
+          <img src="images/cart_icon.png" alt="Panier" width="30" height="30">
+	</a>
+
+        <button id="menuButton" class="menu-button">
+            <div class="menu-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </button>
+        <a href="index.html"><img src="images/01_logo.png" alt="Logo" class="logo"></a>
+        <nav id="menu" class="menu">
+            <button id="closeButton" class="close-button">&times;</button>
+            <ul>
+                <li><a href="produit.html"><strong>Produits</strong></a>
+                    <ul>
+                        <li><a href="produit.html">Produits</a></li>
+                        <li><a href="#">Abonnement</a></li>
+                        <li><a href="#">Salon de thé</a></li>
+                        <li><a href="#">Goodies</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><strong>À propre</strong></a>
+                    <ul>
+                        <li><a href="#">Concept</a></li>
+                        <li><a href="#">Chefs</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><strong>Aide</strong></a>
+                    <ul>
+                        <li><a href="#">Service client</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 메인 컨텐츠 -->
+    <main>
+        <h1>Votre Panier</h1>
+        <!-- 장바구니 아이템을 표시할 섹션 -->
+        <div id="cart-items">
+            <!-- JavaScript를 통해 장바구니 아이템이 동적으로 추가됩니다 -->
+        </div>
+        <!-- 총 가격 표시 -->
+        <div id="cart-total">
+            <p>Total: <span id="total-price">0€</span></p>
+        </div>
+        <!-- 장바구니 비우기 버튼 -->
+        <button id="clear-cart">Vider le panier</button>
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer-section">
+            <h3>Amuser chez Éclart</h3>
+            <ul>
+                <li><a href="produit.html">Produits</a></li>
+                <li><a href="#">Abonnement</a></li>
+                <li><a href="#">Salon du thé</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <ul>
+		<li><a href="contact_personelle.html">Personelle</a></li>
+                <li><a href="contact_career.html">Career</a></li>
+                <li><a href="contact_fournisseur.html">Fournisseur</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>À propre</h3>
+            <ul>
+                <li><a href="#">Notre concept</a></li>
+                <li><a href="#">Nos chefs</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Éclart Newsletter</h3>
+            <img src="images/mail.png" alt="Mail">
+        </div>
+        <div class="footer-logo">
+            <img src="images/Info.png" alt="Info">
+            <img src="images/slogan.png" alt="Slogan">
+        </div>
+    </footer>
+
+    <!-- JavaScript 파일 연결 -->
+    <script src="cart.js"></script>
+</body>
+</html>

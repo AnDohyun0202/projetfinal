@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Client - Éclart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 오버레이 섹션 -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- 헤더 섹션 -->
+    <header>
+        <button id="menuButton" class="menu-button">
+            <div class="menu-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </button>
+        <a href="index.html"><img src="images/01_logo.png" alt="Logo" class="logo"></a>
+        <nav id="menu" class="menu">
+            <button id="closeButton" class="close-button">&times;</button>
+            <ul>
+                <li><a href="produit.html"><strong>Produits</strong></a>
+                    <ul>
+                        <li><a href="produit.html">Produits</a></li>
+                        <li><a href="#">Abonnement</a></li>
+                        <li><a href="#">Salon de thé</a></li>
+                        <li><a href="#">Goodies</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><strong>À propre</strong></a>
+                    <ul>
+                        <li><a href="#">Concept</a></li>
+                        <li><a href="#">Chefs</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><strong>Aide</strong></a>
+                    <ul>
+                        <li><a href="#">Service client</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 메인 컨텐츠 -->
+    <main>
+        <!-- 상단 로고 -->
+        <div class="fournisseur_logo">
+            <img src="images/logo.png" alt="Logo" class="fournisseur_logo">
+        </div>
+
+        <!-- 인사말 -->
+        <div class="introduction">
+            <p>Bienvenue chez Éclart!</p>
+        </div>
+
+        <div class="introduction_01">
+            <p>Vous avez une question ?</p>
+            <p>Contactez-nous!</p>
+        </div>
+
+        <!-- 고객용 연락처 폼 -->
+        <div class="form-container">
+            <form action="#" method="post">
+                <!-- 이름 / 성 -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nom">Nom:</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="prenom">Prénom:</label>
+                        <input type="text" id="prenom" name="prenom" required>
+                    </div>
+                </div>
+                <!-- 전화번호 / 이메일 -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="telephone">Numéro de téléphone:</label>
+                        <input type="tel" id="telephone" name="telephone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Adresse mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <!-- 메시지 -->
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <!-- 전송 버튼 -->
+                <div class="form-group">
+                    <button type="submit">Envoyer</button>
+                </div>
+            </form>
+        </div>
+	<!-- 지도와 연락처 정보 -->
+	<div class="map-and-info">
+	    <!-- Google 지도 -->
+	    <div class="map-container">
+	        <h2>Nous trouver</h2>
+	        <!-- Google Maps iframe 삽입 -->
+	        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2762.3645410737196!2d4.831779515585753!3d45.76255147910569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea541860b0ef%3A0x976ce3b9ef621d12!2s85%20Rue%20du%20Pr%C3%A9sident%20Edouard%20Herriot%2C%2069002%20Lyon%2C%20France!5e0!3m2!1sen!2sus!4v1638364461311!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+	    </div>
+	    <!-- 연락처 정보 -->
+	    <div class="contact-info">
+	        <h2>Notre Adresse</h2>
+	        <p>
+	            85 Rue Du President Edouard Herriot<br>
+	            69002, Lyon
+	        </p>
+	        <h3>Heures d'ouverture</h3>
+	        <p>
+	            Mardi-Samedi: 7h - 19h 30<br>
+	            Dimanche-Lundi: Fermé
+	        </p>
+	        <h3>Contact</h3>
+	        <p>04 81 91 31 87</p>
+	    </div>
+	</div>
+
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer-section">
+            <h3>Amuser chez Éclart</h3>
+            <ul>
+                <li><a href="produit.html">Produits</a></li>
+                <li><a href="#">Abonnement</a></li>
+                <li><a href="#">Salon du thé</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <ul>
+		<li><a href="contact_personelle.html">Personelle</a></li>
+                <li><a href="contact_career.html">Career</a></li>
+                <li><a href="contact_fournisseur.html">Fournisseur</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>À propre</h3>
+            <ul>
+                <li><a href="#">Notre concept</a></li>
+                <li><a href="#">Nos chefs</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Éclart Newsletter</h3>
+            <img src="images/mail.png" alt="Mail">
+        </div>
+        <div class="footer-logo">
+            <img src="images/Info.png" alt="Info">
+            <img src="images/slogan.png" alt="Slogan">
+        </div>
+    </footer>
+
+    <!-- 스크립트 -->
+    <script>
+    const menuButton = document.getElementById('menuButton');
+    const closeButton = document.getElementById('closeButton');
+    const overlay = document.getElementById('overlay');
+    const menu = document.getElementById('menu');
+
+    menuButton.addEventListener('click', function() {
+        menu.classList.toggle('menu-open');
+        overlay.classList.toggle('overlay-visible');
+    });
+
+    closeButton.addEventListener('click', function() {
+        menu.classList.toggle('menu-open');
+        overlay.classList.toggle('overlay-visible');
+    });
+
+    overlay.addEventListener('click', function() {
+        menu.classList.remove('menu-open');
+        overlay.classList.remove('overlay-visible');
+    });
+    </script>
+</body>
+</html>
